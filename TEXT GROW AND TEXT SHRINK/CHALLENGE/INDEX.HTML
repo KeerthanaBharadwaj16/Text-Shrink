@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Assignment-3</title>
+</head>
+<body>
+      <link rel="stylesheet" href="style.css">
+      <title>Program3</title>
+     <header><nav>
+          <a href="/html">HOME</a> |
+          <a href="/html">PLACES</a> |
+          <a href="/html">GALLERY</a> |
+          <a href="/html">ABOUT US</a>
+        </nav>
+      </header> 
+        <h2><u>Switzerland</u></h2>
+      <p id="demo"></p>
+      <script>
+      var var1 = setInterval(inTimer, 500);
+      var fs = 5; 
+      var ids = document.getElementById("demo");
+      function inTimer()
+      {
+        ids.innerHTML = 'Switzerland';
+        ids.setAttribute('style', "font-size: " + fs + "px; color: #33ccff");
+        fs += 5;
+        if (fs >= 50)
+        {
+          clearInterval(var1);
+          var2 = setInterval(deTimer, 500);
+        }
+      }
+    function deTimer()
+      {
+        fs -= 5;
+        ids.innerHTML = 'Switzerland';
+        ids.setAttribute('style', "font-size: " + fs + "px; color: #ff3333");
+       if (fs == 5)
+        {
+          clearInterval(var2);
+          var1 = setInterval(inTimer, 500);
+        }
+      }
+</script>
+      <title>Switzerland</title>
+      <img src="mountain.jpg" alt="Switzerland" width="400" height="233">
+      <br>
+      <h3>by<a href="/html"> Keerthana</a></h3>
+      <article><strong>Switzerland is a mountainous Central European country, home to numerous lakes, villages and the high peaks of the Alps. Its cities contain medieval quarters, with landmarks like capital Bern’s Zytglogge clock tower and Lucerne’s wooden chapel bridge. The country is also known for its ski resorts and hiking trails.</strong></article>
+      <br>    
+      <section>Year:2020<br>
+               Date:16th May</section>
+      <h3><u> Reviews</u></h3>      
+      <section>
+        <strong>Switzerland in May was just stunning, we spend a four day break and traveled all over the country but you would need several lifetimes to do it justice.</strong>
+        <br>
+        <stong>Max</strong><img src="img1.png" alt="rating";>      
+          <br>
+        <strong>Heaven on earth!!</strong><br>
+        <hr>
+        <strong>The first sight of snow capped Alps is just about enough to send shivers down your spine and put a grin across your face</strong> 
+        <br>
+        <stong>Joey</strong><img src="img2.png" alt="rating";>
+          <br>
+        <strong>My fav place!!</strong><br>
+        <hr>
+        <strong>This is the vacation that i am not going to forget in my lifetime. Best place to visit.</strong>
+        <br>
+        <stong>Dev</strong><img src="img3.png" alt="rating";>
+          <br>
+          <strong>Exciting!!!</strong><br>
+        <hr>
+      </section>
+       <footer><nav>
+          <a href="/html">HOME</a> |
+          <a href="/html">PLACES</a> |
+          <a href="/html">GALLERY</a> |
+          <a href="/html">ABOUT US</a>
+        </nav>
+<br>
+</footer>
+</body>
+</html>
